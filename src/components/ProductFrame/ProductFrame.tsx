@@ -1,11 +1,16 @@
 import { useState } from 'react'
 import { BsFillHandbagFill } from 'react-icons/bs'
+import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
+import IProducts from '../../interfaces/IProducts';
 import convertToCurrency from '../../utils/convertToCurrency'
 import Stars from '../Stars/Stars'
 
 const getProductFrame = ({ products }: any) => {
 
     const [currency, setCurrency] = useState('usd');
+    const [locale, setLocale] = useState('en-us')
+
+    const quantity = 0;
 
     return (
         products?.map((item: any) => {
@@ -23,11 +28,22 @@ const getProductFrame = ({ products }: any) => {
                         <p className='text-zinc-400 mt-2'>
                             {item.name}
                         </p>
-                        <p>{convertToCurrency(item.price, currency)}</p>
+                        <p>{convertToCurrency(item.price, locale, currency)}</p>
                         <Stars starQuantity={item.stars} />
-                        <div className={'bg-black w-40 flex items-center justify-center h-8 relative top-4 cursor-pointer'}>
-                            <BsFillHandbagFill /> + ADD TO CART
-                        </div>
+                        {quantity !== 0 ?
+                            (
+                                <div className={'bg-black w-40 flex items-center justify-center h-8 relative top-4 cursor-pointer'}>
+                                    <BsFillHandbagFill /> + ADD TO CART
+                                </div>
+                            )
+                            :
+                            (
+                                <div className='bg-black w-40 flex h-8 relative items-center justify-around top-4'>
+                                    <AiOutlineMinus className='cursor-pointer bg-zinc-500' />
+                                    <span>{quantity}</span>
+                                    <AiOutlinePlus className='cursor-pointer bg-zinc-500' />
+                                </div>
+                            )}
                     </div>
                 </div>
             );

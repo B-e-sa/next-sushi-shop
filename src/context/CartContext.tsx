@@ -1,4 +1,5 @@
 import { createContext, Dispatch, SetStateAction, useState } from 'react'
+import IProducts from '../interfaces/IProducts'
 
 interface IChildren {
     children: JSX.Element

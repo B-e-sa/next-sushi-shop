@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       animation: {
         'half-slow-spin': 'spin 10s linear infinite' 
+      },
+      height: {
+        '136': '34rem'
       }
     },
   },

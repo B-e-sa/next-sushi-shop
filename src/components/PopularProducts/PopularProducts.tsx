@@ -8,14 +8,14 @@ const PopularProducts = () => {
     const topProducts = useGetTopProducts(products.products);
 
     return (
-        <div className='flex flex-col flex-wrap items-center h-96 w-screen'>
+        <div className='flex flex-col flex-wrap items-center justify-center h-136 w-screen pb-9'>
             <p className='text-white self-start'>Popular this week</p>
             <div
                 className='grid grid-cols-4 gap-5'>
                 <ProductFrame products={topProducts} />
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default PopularProducts
+export default PopularProducts;

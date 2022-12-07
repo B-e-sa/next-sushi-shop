@@ -1,16 +1,21 @@
-const convertToCurrency = (number: number, currency: string): string | undefined => {
-    if (currency === "brl")
-        return number.toLocaleString(
-            'pt-br', { style: 'currency', currency: 'BRL' }
-        )
+const convertToCurrency = (
+    number: number,
+    locale: string,
+    currency: string
+): string | undefined => {
 
-    else if (currency === "usd")
-        return number.toLocaleString(
-            'en-us', { style: 'currency', currency: 'USD' }
-        )
+    if (locale && currency)
+    
+        try {
+            return number.toLocaleString(
+                locale, { style: 'currency', currency: 'BRL' }
+            );
+        } catch (e) {
+            throw new Error(String(e));
+        }
 
-    else 
-        throw new Error("Currency expects a currency string");
-}
+    else
+        throw new Error("Currency expects a locale and currency string");
+};
 
-export default convertToCurrency
+export default convertToCurrency;
