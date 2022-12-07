@@ -1,8 +1,12 @@
+import { useState } from "react"
 import { BsFillHandbagFill } from "react-icons/bs"
-import convertToUsd from "../../utils/convertToUsd"
+import convertToCurrency from "../../utils/convertToCurrency"
 import Stars from "../Stars/Stars"
 
 const getProductFrame = ({ products, responsiveSizes = "" }: any) => {
+
+    const [currency, setCurrency] = useState("usd")
+
     return (
         products.map((item: any) => {
             return (
@@ -19,7 +23,7 @@ const getProductFrame = ({ products, responsiveSizes = "" }: any) => {
                         <p className="text-zinc-400 mt-2">
                             {item.name}
                         </p>
-                        <p>{convertToUsd(item.price)}</p>
+                        <p>{convertToCurrency(item.price, currency)}</p>
                         <Stars starQuantity={item.stars} />
                         <div className={'bg-black w-40 flex items-center justify-center h-8 relative top-4 cursor-pointer'}>
                             <BsFillHandbagFill /> + ADD TO CART
