@@ -1,26 +1,26 @@
-import { useState } from "react"
-import { BsFillHandbagFill } from "react-icons/bs"
-import convertToCurrency from "../../utils/convertToCurrency"
-import Stars from "../Stars/Stars"
+import { useState } from 'react'
+import { BsFillHandbagFill } from 'react-icons/bs'
+import convertToCurrency from '../../utils/convertToCurrency'
+import Stars from '../Stars/Stars'
 
-const getProductFrame = ({ products, responsiveSizes = "" }: any) => {
+const getProductFrame = ({ products }: any) => {
 
-    const [currency, setCurrency] = useState("usd")
+    const [currency, setCurrency] = useState('usd');
 
     return (
-        products.map((item: any) => {
+        products?.map((item: any) => {
             return (
-                <div key={item.name} className="text-white relative bg-zinc-800 w-52">
+                <div key={item.name} className='text-white relative bg-zinc-800 w-52'>
                     <div className=' bg-amber-200 text-black text-center -rotate-90 w-10 absolute top-2 -left-2'>
                         sale
                     </div>
                     <div className='flex flex-col items-center bg-zinc-900'>
                         <img
-                            className="h-40 object-cover"
+                            className='h-40 object-cover'
                             src={item.image}
                             alt={item.name}
                         />
-                        <p className="text-zinc-400 mt-2">
+                        <p className='text-zinc-400 mt-2'>
                             {item.name}
                         </p>
                         <p>{convertToCurrency(item.price, currency)}</p>
@@ -30,8 +30,8 @@ const getProductFrame = ({ products, responsiveSizes = "" }: any) => {
                         </div>
                     </div>
                 </div>
-            )
-        }))
-}
+            );
+        }));
+};
 
-export default getProductFrame
+export default getProductFrame;

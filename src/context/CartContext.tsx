@@ -1,18 +1,34 @@
-import { createContext, useState } from "react"
+import { createContext, Dispatch, SetStateAction, useState } from 'react'
 
 interface IChildren {
     children: JSX.Element
-}
+};
 
-const CartContext = createContext({})
+interface ICartContext {
+    getIemQuantity: (id: number) => number
+    increaseCartQuantity: (id: number) => void
+    decreaseCartQuantity: (id: number) => void
+    removeFromCart: (id: number) => void
+};
 
-const CartProvider = ({ children }: IChildren): JSX.Element => {
-    const [cartContext, setCartContext] = useState([])
+interface IValues {
+    cartContext: never[]
+    setCartContext: Dispatch<SetStateAction<never[]>>
+};
+
+export const CartContext = createContext({} as IValues);
+
+export const CartProvider = ({ children }: IChildren): JSX.Element => {
+
+    const [cartContext, setCartContext] = useState<any>();
+
+    const getItemQuantty = (id: number) => {
+        return cartContext.find((item: { id: number }) => item.id === id)?.quantity || 0
+    };
+
     return (
         <CartContext.Provider value={{ cartContext, setCartContext }}>
             {children}
         </CartContext.Provider>
-    )
-}
-
-export default CartProvider
+    );
+};

@@ -27,82 +27,58 @@
             "category": "exclusive food"
         }
     ],
-    "popularThisWeek": [
-        {
-            "name": "Caprese Salad",
-            "image": "https://as2.ftcdn.net/v2/jpg/02/84/99/67/1000_F_284996708_iXG2nwMrV9xBwwDEEwKPrYeOXL78Tyf1.jpg",
-            "price": 0,
-            "stars": 5
-        },
-        {
-            "name": "Carbonara",
-            "image": "https://as2.ftcdn.net/v2/jpg/02/12/77/71/1000_F_212777132_5iP0PER1mJc8tYyRl15HyZDslypDXmRT.jpg",
-            "price": 0,
-            "stars": 5
-        },
-        {
-            "name": "Garlic sauce with steak",
-            "image": "https://as1.ftcdn.net/v2/jpg/01/89/18/74/1000_F_189187493_t8JmMNhhFyXIcTdYaX2Wy5Fh8JvlRHOA.jpg",
-            "price": 0,
-            "stars": 5
-        },
-        {
-            "name": "NY Steak",
-            "image": "https://as2.ftcdn.net/v2/jpg/02/35/13/93/1000_F_235139347_p5zIyK0h6APlXspCIXsTW5GpmJhMnHcT.jpg",
-            "price": 0,
-            "stars": 4
-        },
-        {
-            "name": "Shrimp pasta",
-            "image": "https://as2.ftcdn.net/v2/jpg/03/10/20/01/1000_F_310200105_NLUVhXVGQ7qbf2m3eiz7DXsOzOks5i2I.jpg",
-            "price": 0,
-            "stars": 4.5
-        }
-    ],
     "products": [
         {
+            "id": 1,
             "name": "Caprese Salad",
             "image": "https://as2.ftcdn.net/v2/jpg/02/84/99/67/1000_F_284996708_iXG2nwMrV9xBwwDEEwKPrYeOXL78Tyf1.jpg",
             "price": 0,
             "stars": 5
         },
         {
+            "id": 2,
             "name": "Carbonara",
             "image": "https://as2.ftcdn.net/v2/jpg/02/12/77/71/1000_F_212777132_5iP0PER1mJc8tYyRl15HyZDslypDXmRT.jpg",
             "price": 0,
             "stars": 5
         },
         {
+            "id": 3,
             "name": "Chicken Wing",
             "image": "https://as2.ftcdn.net/v2/jpg/04/52/97/73/1000_F_452977345_wLmxMtjNoBU3XddHobB9ZNQywQEZcFNd.jpg",
             "price": 0,
             "stars": 3.5
         },
         {
+            "id": 4,
             "name": "Shrimp pasta",
             "image": "https://as2.ftcdn.net/v2/jpg/03/10/20/01/1000_F_310200105_NLUVhXVGQ7qbf2m3eiz7DXsOzOks5i2I.jpg",
             "price": 0,
             "stars": 4.5
         },
         {
+            "id": 5,
             "name": "NY Steak",
             "image": "https://as2.ftcdn.net/v2/jpg/02/35/13/93/1000_F_235139347_p5zIyK0h6APlXspCIXsTW5GpmJhMnHcT.jpg",
             "price": 0,
             "stars": 4
         },
         {
+            "id": 6,
             "name": "Garlic sauce with steak",
             "image": "https://as1.ftcdn.net/v2/jpg/01/89/18/74/1000_F_189187493_t8JmMNhhFyXIcTdYaX2Wy5Fh8JvlRHOA.jpg",
             "price": 0,
             "stars": 5
         },
         {
+            "id": 7,
             "name": "Skewer w/ rice & brocolli ",
             "image": "https://as1.ftcdn.net/v2/jpg/03/02/37/94/1000_F_302379462_OXIM2hODQs6OXbLbOVaySe1wmAG9Xwgl.jpg",
             "price": 0,
             "stars": 3
         },
         {
+            "id": 8,
             "name": "Bacon w/ bbc sauce",
             "image": "https://as2.ftcdn.net/v2/jpg/02/21/80/45/1000_F_221804505_vFgTYR4hNtz2JPyWSCHjZvD8eKGg81it.jpg",
             "price": 0,
