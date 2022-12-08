@@ -10,34 +10,34 @@ const Stars = ({ starQuantity }: any = 5) => {
     // if has 5 stars
     if (starQuantity === 5) {
 
-      for(let i = 0; i < 5; i++) {
-        stars.push(<BsStarFill className='fill-yellow-400'/> );
+      for (let i = 0; i < 5; i++) {
+        stars.push(<BsStarFill className='fill-yellow-400' />);
       };
 
-      
+
     } else {
 
       // push full stars
       for (let i = 0; i < Math.floor(starQuantity); i++) {
-        stars.push(<BsStarFill className='fill-yellow-400'/>);
+        stars.push(<BsStarFill className='fill-yellow-400' />);
       };
 
-      // see if number hasn't half stars
+      // see if number is integer(hasn't half stars)
       if (Number.isInteger(starQuantity)) {
 
-        // push empty stars
+        // fill with empty stars
         for (let i = 0; i < 5 - Math.floor(starQuantity); i++) {
-          stars.push(<BsStar className='fill-yellow-400'/>);
+          stars.push(<BsStar className='fill-yellow-400' />);
         };
 
       } else {
 
-        stars.push(<BsStarHalf className='fill-yellow-400'/>);
+        stars.push(<BsStarHalf className='fill-yellow-400' />);
 
-        for(let i = 0; i < 4 - Math.floor(starQuantity); i++) {
-          if(4 - Math.floor(starQuantity) === 0)
+        for (let i = 0; i < 4 - Math.floor(starQuantity); i++) {
+          if (4 - Math.floor(starQuantity) === 0)
             break;
-          stars.push(<BsStar className='fill-yellow-400'/>);
+          stars.push(<BsStar className='fill-yellow-400' />);
         };
 
       };

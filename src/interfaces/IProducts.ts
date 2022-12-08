@@ -6,4 +6,4 @@ interface IProducts {
     stars: number;
 };
 
-export default IProducts
+export default IProducts;

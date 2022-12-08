@@ -1,17 +1,17 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from 'react';
 
 const useIsMobile = () => {
 
-    const [isMobile, setIsMobile] = useState(false)
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         if (navigator.userAgent.mobile)
             setIsMobile(true)
         setIsMobile(false)
-    }, [])
+    }, []);
 
-    return isMobile
+    return isMobile;
 
 }
 
-export default useIsMobile
+export default useIsMobile;
