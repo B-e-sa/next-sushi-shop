@@ -1,29 +1,29 @@
 {
     "banners": [
         {
-            "src": "https://as1.ftcdn.net/v2/jpg/03/37/48/82/1000_F_337488257_uIisoWFIYsSa0NMOVwDmiVDSmEjGrMSc.jpg",
+            "src": "/assets/banners/vegetable-bowl.webp",
             "alt": "Noodles Plate"
         }
     ],
     "categories": [
         {
-            "image": "https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX2356197.jpg",
+            "image": "/assets/categories/sea-food.webp",
             "category": "sea food"
         },
         {
-            "image": "https://as1.ftcdn.net/v2/jpg/01/34/24/88/1000_F_134248871_ohmkpkJnC11GSNClhDaNQWGPde8joSwS.jpg",
+            "image": "/assets/categories/hot-sushi.webp",
             "category": "hot sushi"
         },
         {
-            "image": "https://as2.ftcdn.net/v2/jpg/02/41/97/35/1000_F_241973511_mysWsFqQ7Utgz3eIn170PzdmqumuWjb8.jpg",
+            "image": "/assets/categories/salads.webp",
             "category": "salads"
         },
         {
-            "image": "https://as2.ftcdn.net/v2/jpg/02/74/80/29/1000_F_274802934_QmojFgz2oWKxQL2H6POA21tzkmyMdgbt.jpg",
+            "image": "/assets/categories/steaks.webp",
             "category": "steaks"
         },
         {
-            "image": "https://as2.ftcdn.net/v2/jpg/05/43/32/83/1000_F_543328377_3Gl3qjXpE0ikZJp759Q7dHLwz8XyeL7i.jpg",
+            "image": "/assets/categories/exclusive-food.webp",
             "category": "exclusive food"
         }
     ],
@@ -31,14 +31,14 @@
         {
             "id": 1,
             "name": "Caprese Salad",
-            "image": "https://as2.ftcdn.net/v2/jpg/02/84/99/67/1000_F_284996708_iXG2nwMrV9xBwwDEEwKPrYeOXL78Tyf1.jpg",
+            "image": "/assets/products/caprese.webp",
             "price": 0,
             "stars": 5
         },
         {
             "id": 2,
             "name": "Carbonara",
-            "image": "https://as2.ftcdn.net/v2/jpg/02/12/77/71/1000_F_212777132_5iP0PER1mJc8tYyRl15HyZDslypDXmRT.jpg",
+            "image": "/assets/products/carbonara.webp",
             "price": 0,
             "stars": 5
         },
