@@ -1,4 +1,4 @@
-import { createContext, Dispatch, SetStateAction, useContext, useState } from 'react'
+import { createContext, useContext, useState } from 'react'
 
 interface IChildren {
     children: JSX.Element
@@ -20,7 +20,7 @@ interface IItem {
 export const CartContext = createContext({} as IContext);
 
 export const useCart = () => {
-    return useContext(CartContext)
+    return useContext(CartContext);
 };
 
 export const CartProvider = ({ children }: IChildren): JSX.Element => {
@@ -34,40 +34,40 @@ export const CartProvider = ({ children }: IChildren): JSX.Element => {
     const increaseItemQuantity = (id: number) => {
         setCartItems(currentItems => {
             if (currentItems.find(item => item.id === id) == null) {
-              return [...currentItems, { id, quantity: 1 }]
+                return [...currentItems, { id, quantity: 1 }]
             } else {
-              return currentItems.map(item => {
-                if (item.id === id) {
-                  return { ...item, quantity: item.quantity + 1 }
-                } else {
-                  return item
-                }
-              })
-            }
-          })
-    }
+                return currentItems.map(item => {
+                    if (item.id === id) {
+                        return { ...item, quantity: item.quantity + 1 }
+                    } else {
+                        return item
+                    };
+                });
+            };
+        });
+    };
 
     const decreaseItemQuantity = (id: number) => {
         setCartItems(currentItems => {
-            if(currentItems.find(item => item.id === id)?.quantity === 1) {
+            if (currentItems.find(item => item.id === id)?.quantity === 1) {
                 return currentItems.filter(item => item.id !== id)
             } else {
                 return currentItems.map(item => {
-                    if(item.id === id) {
-                        return { ...item, quantity: item.quantity - 1}
+                    if (item.id === id) {
+                        return { ...item, quantity: item.quantity - 1 }
                     } else {
                         return item
-                    }
-                })
-            }
-        })
-    }
+                    };
+                });
+            };
+        });
+    };
 
     const removeFromCart = (id: number) => {
         setCartItems(currentItems => {
-            return currentItems.filter(item => item.id !== id)
-        })
-    }
+            return currentItems.filter(item => item.id !== id);
+        });
+    };
 
     return (
         <CartContext.Provider value={{

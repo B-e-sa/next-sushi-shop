@@ -10,7 +10,7 @@ const Footer = () => {
                 <button type="submit" title="subscribe">Subscribe</button>
             </div>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

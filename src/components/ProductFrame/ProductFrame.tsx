@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
-import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
-import { BsFillHandbagFill } from 'react-icons/bs';
+import { useState } from 'react';
 import { useCart } from '../../context/CartContext';
+import Image from 'next/image'
 import IProducts from '../../interfaces/IProducts';
 import convertToCurrency from '../../utils/convertToCurrency';
 import AddButton from '../AddButton/AddButton';
@@ -18,15 +17,17 @@ const ProductFrame = ({ id, name, image, price, stars }: IProducts) => {
     const quantity = getItemQuantity(id);
 
     return (
-        <div key={id} className='text-white relative bg-zinc-800 w-52'>
+        <div key={id} className='text-white relative w-fit h-fit'>
             <div className=' bg-amber-200 text-black text-center -rotate-90 w-14 absolute top-4 -left-4'>
                 sale
             </div>
             <div className='flex flex-col items-center bg-zinc-900'>
-                <img
-                    className='h-40 object-cover'
-                    src={image}
+                <Image
+                    className='w-full h-full'
                     alt={name}
+                    src={image}
+                    width={190}
+                    height={190}
                 />
                 <p className='text-zinc-400 mt-2'>{name}</p>
                 <p>{convertToCurrency(price, locale, currency)}</p>

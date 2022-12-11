@@ -1,5 +1,5 @@
-import React from 'react'
-import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+import React from 'react';
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { useCart } from '../../context/CartContext';
 
 
@@ -11,7 +11,7 @@ const RemoveButton = ({ id }: { id: number; }) => {
         increaseItemQuantity,
         removeFromCart,
         decreaseItemQuantity,
-    } = useCart()
+    } = useCart();
 
     const quantity = getItemQuantity(id);
 
@@ -33,7 +33,7 @@ const RemoveButton = ({ id }: { id: number; }) => {
                 onClick={() => removeFromCart(id)}
             >REMOVE</div>
         </div>
-    )
-}
+    );
+};
 
-export default RemoveButton
+export default RemoveButton;

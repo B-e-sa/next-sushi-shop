@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { BsFillHandbagFill } from 'react-icons/bs';
 import { useCart } from '../../context/CartContext';
 
 const AddButton = ({ id }: { id: number }) => {
 
-  const { increaseItemQuantity } = useCart()
+  const { increaseItemQuantity } = useCart();
 
   return (
     <div
@@ -13,7 +13,7 @@ const AddButton = ({ id }: { id: number }) => {
     >
       <BsFillHandbagFill /> + ADD TO CART
     </div>
-  )
-}
+  );
+};
 
-export default AddButton
+export default AddButton;
