@@ -1,7 +1,11 @@
 import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs'
 import { IconContext } from 'react-icons/lib/esm/iconContext'
 
-const Stars = ({ starQuantity }: any = 5) => {
+interface IStar {
+  starQuantity: number
+} 
+
+const Stars = ({ starQuantity }: IStar) => {
 
   const printStars = () => {
 
@@ -39,7 +43,6 @@ const Stars = ({ starQuantity }: any = 5) => {
             break;
           stars.push(<BsStar className='fill-yellow-400' />);
         };
-
       };
     };
 

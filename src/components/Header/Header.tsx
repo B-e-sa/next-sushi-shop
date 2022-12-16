@@ -5,9 +5,8 @@ const Header = () => {
                 <div className='flex bg-amber-200 w-14 h-14 justify-center mr-5  items-center'>
                     <button
                         style={{ 
-                            backgroundImage: 'url(/menu.svg)',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundColor: 'red'
+                            backgroundImage: 'url(/assets/icons/menu.svg)',
+                            backgroundRepeat: 'no-repeat'
                         }}
                         className='w-8 h-8 cursor-pointer'
                     ></button>

@@ -1,0 +1,157 @@
+{
+    "banners": [
+        {
+            "src": "/assets/banners/vegetable-bowl.webp",
+            "alt": "Noodles Plate"
+        }
+    ],
+    "categories": [
+        {
+            "image": "/assets/categories/sea-food.webp",
+            "category": "sea food"
+        },
+        {
+            "image": "/assets/categories/hot-sushi.webp",
+            "category": "hot sushi"
+        },
+        {
+            "image": "/assets/categories/salads.webp",
+            "category": "salads"
+        },
+        {
+            "image": "/assets/categories/steaks.webp",
+            "category": "steaks"
+        },
+        {
+            "image": "/assets/categories/exclusive-food.webp",
+            "category": "exclusive food"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Caprese salad",
+            "image": "/assets/products/caprese.webp",
+            "price": 0,
+            "stars": 5,
+            "categories": [
+                "salad"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Carbonara",
+            "image": "/assets/products/carbonara.webp",
+            "price": 0,
+            "stars": 5,
+            "categories": [
+                "pasta"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Chicken salad",
+            "image": "/assets/products/chicken-salad.webp",
+            "price": 0,
+            "stars": 3.5,
+            "categories": [
+                "salad",
+                "steak"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Bolognese pasta",
+            "image": "/assets/products/bolognese-pasta.webp",
+            "price": 0,
+            "stars": 4.5,
+            "categories": [
+                "pasta"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Steak tartare",
+            "image": "/assets/products/steak-tartare.webp",
+            "price": 0,
+            "stars": 4,
+            "categories": [
+                "steak"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Niguiri",
+            "image": "/assets/products/niguiri.webp",
+            "price": 0,
+            "stars": 5,
+            "categories": [
+                "sushi"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Shrimp Skewer",
+            "image": "/assets/products/shrimp-skewer.webp",
+            "price": 0,
+            "stars": 3,
+            "categories": [
+                "seafood"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Rib eye steak",
+            "image": "/assets/products/rib-eye-steak.webp",
+            "price": 0,
+            "stars": 2.5,
+            "categories": [
+                "steak"
+            ]
+        }
+    ],
+    "reviews": [
+        {
+            "reviwerName": "Matthew Adams",
+            "avatar": "/assets/avatars/m3.webp",
+            "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
+            "note": 3.5
+        },
+        {
+            "reviwerName": "Lola Petrick",
+            "avatar": "/assets/avatars/w1.webp",
+            "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
+            "note": 4
+        },
+        {
+            "reviwerName": "Roxanne Marks",
+            "avatar": "/assets/avatars/w2.webp",
+            "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
+            "note": 4
+        },
+        {
+            "reviwerName": "Eliana Friedman",
+            "avatar": "/assets/avatars/w3.webp",
+            "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
+            "note": 4.5
+        },
+        {
+            "reviwerName": "Mohammed Dillon",
+            "avatar": "/assets/avatars/m2.webp",
+            "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
+            "note": 5
+        },
+        {
+            "reviwerName": "David Richard",
+            "avatar": "/assets/avatars/m1.webp",
+            "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
+            "note": 3
+        },
+        {
+            "reviwerName": "Hermione Mann",
+            "avatar": "/assets/avatars/w5.webp",
+            "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
+            "note": 4
+        }
+    ]
+}

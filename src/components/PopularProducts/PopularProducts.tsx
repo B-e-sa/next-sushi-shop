@@ -1,18 +1,18 @@
-import getTopProducts from '../../utils/getTopProducts';
-import products from '../../utils/products.json';
+import getHigherNotes from '../../utils/getHigherNotes';
+import data from '../../utils/data.json';
 import ProductFrame from '../ProductFrame/ProductFrame';
 
 const PopularProducts = () => {
 
-    const topProducts = getTopProducts(products.products)
+    const topProducts = getHigherNotes(data.products)
 
     return (
-        <div className='flex flex-col flex-wrap items-center justify-center h-136 w-screen pb-9'>
-            <p className='text-white self-start'>Popular this week</p>
+        <div className='flex flex-col items-center justify-center md:h-136 h-200 w-screen pb-9'>
+            <p className='text-white self-center'>Popular</p>
             <div
-                className='grid grid-cols-4 gap-5'>
+                className='grid md:grid-cols-4 grid-cols-2 gap-5 repeat'>
                 {topProducts.map((item) => {
-                    return <ProductFrame {...item} />
+                    return <ProductFrame {...item} key={item.id}/>
                 })}
             </div>
         </div>

@@ -1,4 +1,4 @@
-import products from '../../utils/products.json';
+import data from '../../utils/data.json';
 
 const Categories = () => {
 
@@ -45,18 +45,19 @@ const Categories = () => {
             className='grid w-screen'
             style={{ gridTemplateRows: '250px 250px' }}
         >
-            {products.categories.map((category, index) => {
+            {data.categories.map(({category, image}, index) => {
                 return (
                     <div
-                        key={category.category}
+                        className='bg-cover bg-no-repeat '
+                        key={category}
                         style={{
-                            backgroundImage: `url(${category.image})`,
-                            backgroundRepeat: 'no-repeat',
-                            backgroundSize: 'cover',
-                            gridArea: getColumnSizes(index),
+                            backgroundImage: `url(${image})`,
+                            gridArea: getColumnSizes(index)
                         }}
                     >
-                        <p className='text-white size text-4xl font-serif'>{category.category}</p>
+                        <p className='text-white size text-4xl font-serif'>
+                            {category}
+                        </p>
                     </div>
                 )
             })}
