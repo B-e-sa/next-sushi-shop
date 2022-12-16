@@ -14,7 +14,7 @@ const Stars = ({ starQuantity }: IStar) => {
     if (starQuantity === 5) {
 
       for (let i = 0; i < 5; i++) {
-        stars.push(<BsStarFill className='fill-yellow-400' />);
+        stars.push(<BsStarFill className='fill-yellow-200' />);
       };
 
 
@@ -22,7 +22,7 @@ const Stars = ({ starQuantity }: IStar) => {
 
       // push full stars
       for (let i = 0; i < Math.floor(starQuantity); i++) {
-        stars.push(<BsStarFill className='fill-yellow-400' />);
+        stars.push(<BsStarFill className='fill-yellow-200' />);
       };
 
       // see if number is integer(hasn't half stars)
@@ -30,17 +30,17 @@ const Stars = ({ starQuantity }: IStar) => {
 
         // fill with empty stars
         for (let i = 0; i < 5 - Math.floor(starQuantity); i++) {
-          stars.push(<BsStar className='fill-yellow-400' />);
+          stars.push(<BsStar className='fill-yellow-200' />);
         };
 
       } else {
 
-        stars.push(<BsStarHalf className='fill-yellow-400' />);
+        stars.push(<BsStarHalf className='fill-yellow-200' />);
 
         for (let i = 0; i < 4 - Math.floor(starQuantity); i++) {
           if (4 - Math.floor(starQuantity) === 0)
             break;
-          stars.push(<BsStar className='fill-yellow-400' />);
+          stars.push(<BsStar className='fill-yellow-200' />);
         };
       };
     };

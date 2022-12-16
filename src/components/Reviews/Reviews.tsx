@@ -10,10 +10,10 @@ const Reviews = () => {
             .reverse();
 
     return (
-        <div className='flex relative'>
+        <div className='flex relative h-64'>
             {sortedReviews.map(({ reviwerName, avatar, review, note, reviewDate }) => {
                 return (
-                    <div className='bg-zinc-800 w-4/12 px-10 py-5 mx-6 relative'>
+                    <div className='bg-zinc-800 w-4/12 px-10 py-5 mx-6 relative h-fit'>
                         <p className='text-white absolute right-0 bg-zinc-600 text-xs w-12 text-center'>
                             {reviewDate}
                         </p>
