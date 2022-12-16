@@ -1,35 +1,45 @@
-import data from '../../utils/data.json';
 import Image from 'next/image';
+import data from '../../utils/data.json';
 import Stars from '../Stars/Stars';
-import getHigherNotes from '../../utils/getHigherNotes';
-import { useEffect } from 'react';
 
 const Reviews = () => {
 
     const sortedReviews =
         data.reviews
             .sort((a, b) => a.note - b.note)
-            .reverse()
+            .reverse();
 
     return (
-        <>
-            {sortedReviews.map(({ reviwerName, avatar, review, note }) => {
+        <div className='flex relative'>
+            {sortedReviews.map(({ reviwerName, avatar, review, note, reviewDate }) => {
                 return (
-                    <div>
+                    <div className='bg-zinc-800 w-4/12 px-10 py-5 mx-6 relative'>
+                        <p className='text-white absolute right-0 bg-zinc-600 text-xs w-12 text-center'>
+                            {reviewDate}
+                        </p>
                         <Image
                             alt={reviwerName}
                             src={avatar}
-                            width={50}
-                            height={50}
-                            className='rounded-full'
+                            width='65'
+                            height='65'
+                            className='rounded-full -mt-12 mb-3'
                         />
-                        <p className='text-white'>{reviwerName}</p>
-                        <p className='text-zinc-400'>{review}</p>
-                        <Stars starQuantity={note}/>
+                        <div className='flex'>
+                            <Image
+                                alt="double quote"
+                                src='/assets/icons/double-quote.svg'
+                                width='20'
+                                height='20'
+                                className='mr-3'
+                            />
+                            <p className='text-white text-xl'>{reviwerName}</p>
+                        </div>
+                        <i><p className='text-zinc-400 text-sm w-96'>{review}</p></i>
+                        <Stars starQuantity={note} />
                     </div>
                 );
             })};
-        </>
+        </div>
     );
 };
 

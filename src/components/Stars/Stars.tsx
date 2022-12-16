@@ -1,5 +1,4 @@
-import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs'
-import { IconContext } from 'react-icons/lib/esm/iconContext'
+import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
 
 interface IStar {
   starQuantity: number
