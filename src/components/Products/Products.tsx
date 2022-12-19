@@ -3,14 +3,19 @@ import ProductFrame from '../ProductFrame/ProductFrame';
 
 const Products = () => {
     return (
-        <div className='flex justify-center items-center h-200'>
-            <div
-                className='grid md:grid-cols-4 grid-cols-2 gap-5 w-fit mx-auto flex-wrap'
-                style={{ gridTemplateRows: '20rem' }}
-            >
-                {data.products.map((item) => {
-                    return <ProductFrame {...item} key={item.id} />
-                })}
+        <div className='flex flex-col justify-center items-center h-200'>
+            <div>
+                <div className='self-start'>
+                    <p className='text-white'>More options</p>
+                </div>
+                <div
+                    className='grid md:grid-cols-4 grid-cols-2 grid-rows-2 gap-5 w-fit mx-auto flex-wrap'
+                    style={{ gridTemplateRows: '20rem' }}
+                >
+                    {data.products.map((item) => {
+                        return <ProductFrame {...item} key={item.id} />
+                    })}
+                </div>
             </div>
         </div>
     );
