@@ -16,8 +16,8 @@ const Reviews = () => {
     const white = ' fill-white';
     const zinc = ' fill-zinc-500';
 
-    const [leftArrowSettings, setleftArrowSettings] = useState(zinc);
-    const [rightArrowSettings, setrightArrowSettings] = useState(white);
+    const [leftArrowSettings, setLeftArrowSettings] = useState(zinc);
+    const [rightArrowSettings, setRightArrowSettings] = useState(white);
 
     const handleClick = (action: string): void => {
         const containerScroll = reviewContainer.current!
@@ -28,18 +28,18 @@ const Reviews = () => {
         if (action === 'right') {
             containerScroll.scrollLeft -= 350;
 
-            setrightArrowSettings(white)
+            setRightArrowSettings(white)
 
             if (containerScroll.scrollLeft == 0)
-                setleftArrowSettings(zinc);
+                setLeftArrowSettings(zinc);
 
         } else {
             containerScroll.scrollLeft += 350;
 
-            setleftArrowSettings(white);
+            setLeftArrowSettings(white);
 
             if (containerScroll.scrollLeft == scrollMaxWidth)
-                setrightArrowSettings(zinc);
+                setRightArrowSettings(zinc);
 
         }
     }
@@ -62,7 +62,7 @@ const Reviews = () => {
                 className='flex relative h-64 w-screen overflow-hidden items-center'
                 ref={reviewContainer}
             >
-                {sortedReviews.map(({ reviwerName, avatar, review, note, reviewDate }) => {
+                {sortedReviews.map(({ reviewerName, avatar, review, note, reviewDate }) => {
                     return (
                         <div className='bg-zinc-800 w-fit px-10 py-5 mx-6 relative h-fit'>
                             <p className='text-white absolute right-0 bg-zinc-600 text-xs w-12 text-center select-none'>
@@ -71,7 +71,7 @@ const Reviews = () => {
                             <Image
                                 draggable='false'
                                 className='rounded-full relative -top-10 select-none'
-                                alt={reviwerName}
+                                alt={reviewerName}
                                 src={avatar}
                                 width='65'
                                 height='65'
@@ -85,7 +85,7 @@ const Reviews = () => {
                                     height='20'
                                 />
                                 <p className='text-white text-xl'>
-                                    {reviwerName}
+                                    {reviewerName}
                                 </p>
                             </div>
                             <p className='text-zinc-400 text-sm w-96'>

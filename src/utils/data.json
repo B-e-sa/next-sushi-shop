@@ -112,53 +112,54 @@
     ],
     "reviews": [
         {
-            "reviwerName": "Matthew Adams",
+            "reviewerName": "Matthew Adams",
             "avatar": "/assets/avatars/m3.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
             "reviewDate": "3-22",
             "note": 3.5
         },
         {
-            "reviwerName": "Lola Petrick",
+            "reviewerName": "Lola Petrick",
             "avatar": "/assets/avatars/w1.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
             "reviewDate": "12-21",
             "note": 4
         },
         {
-            "reviwerName": "Roxanne Marks",
+            "reviewerName": "Roxanne Marks",
             "avatar": "/assets/avatars/w2.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
             "reviewDate": "11-22",
             "note": 4
         },
         {
-            "reviwerName": "Eliana Friedman",
+            "reviewerName": "Eliana Friedman",
             "avatar": "/assets/avatars/w3.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
             "reviewDate": "10-22",
             "note": 4.5
         },
         {
-            "reviwerName": "Mohammed Dillon",
+            "reviewerName": "Mohammed Dillon",
             "avatar": "/assets/avatars/m2.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
             "reviewDate": "11-21",
             "note": 5
         },
         {
-            "reviwerName": "David Richard",
+            "reviewerName": "David Richard",
             "avatar": "/assets/avatars/m1.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
             "reviewDate": "3-22",
             "note": 3
         },
         {
-            "reviwerName": "Hermione Mann",
+            "reviewerName": "Hermione Mann",
             "avatar": "/assets/avatars/w5.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
             "reviewDate": "4-22",
             "note": 4
         }
-    ]
+    ],
+    "subscribeImage": "/assets/subscribeImage/fish.webp"
 }

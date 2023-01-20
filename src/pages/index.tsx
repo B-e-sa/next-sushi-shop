@@ -6,6 +6,7 @@ import Header from '../components/Header/Header';
 import PopularProducts from '../components/PopularProducts/PopularProducts';
 import Products from '../components/Products/Products';
 import Reviews from '../components/Reviews/Reviews';
+import Subscribe from '../components/Subscribe/Subscribe';
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <PopularProducts />
       <Categories />
       <Products />
+      <Subscribe />
       <Reviews />
       <Footer />
     </div>
