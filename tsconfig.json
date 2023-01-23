@@ -16,6 +16,6 @@
     "incremental": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs", "src/components/BannerText", "src/components/SushiLogo", "src/components/Navs"],
   "exclude": ["node_modules"]
 }

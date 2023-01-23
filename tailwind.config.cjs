@@ -10,14 +10,16 @@ module.exports = {
         }
       },
       screens: {
-        'mdl': { 'min': '900px' }
+        'mdl': { 'min': '900px' },
+        'xl': {'min': '3'}
       },
       animation: {
         'half-slow-spin': 'halfSpin 15s linear infinite'
       },
       height: {
-        '136': '34rem',
-        '200': '50rem'
+        '120': '30rem',
+        '200': '50rem',
+        '90vh': '90vh'
       }
     },
   },

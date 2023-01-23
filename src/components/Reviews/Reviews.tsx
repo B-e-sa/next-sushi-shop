@@ -26,6 +26,7 @@ const Reviews = () => {
             containerScroll.scrollWidth - containerScroll.clientWidth
 
         if (action === 'right') {
+
             containerScroll.scrollLeft -= 350;
 
             setRightArrowSettings(white)
@@ -34,6 +35,7 @@ const Reviews = () => {
                 setLeftArrowSettings(zinc);
 
         } else {
+
             containerScroll.scrollLeft += 350;
 
             setLeftArrowSettings(white);
@@ -41,8 +43,8 @@ const Reviews = () => {
             if (containerScroll.scrollLeft == scrollMaxWidth)
                 setRightArrowSettings(zinc);
 
-        }
-    }
+        };
+    };
 
     return (
         <div className='flex flex-col'>

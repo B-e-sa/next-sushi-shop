@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsFillHandbagFill } from 'react-icons/bs';
 import { useCart } from '../../context/CartContext';
+import clsx from 'clsx';
 
 const AddButton = ({ id }: { id: number }) => {
 
@@ -8,10 +9,17 @@ const AddButton = ({ id }: { id: number }) => {
 
   return (
     <div
-      className='bg-black w-40 flex items-center justify-center h-8 relative top-4 cursor-pointer'
+      className={clsx(
+        'flex items-center justify-center',
+        'h-8 w-40',
+        'relative top-4',
+        'cursor-pointer',
+        'bg-black'
+      )}
       onClick={() => increaseItemQuantity(id)}
     >
-      <BsFillHandbagFill /> + ADD TO CART
+      <BsFillHandbagFill />
+      <span>+ ADD TO CART</span>
     </div>
   );
 };

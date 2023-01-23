@@ -1,22 +1,22 @@
-import { GiPlainCircle } from 'react-icons/gi';
 import data from '../../utils/data.json';
 
 const Subscribe = () => {
 
-    const inputStyle = "bg-transparent border-b-2 border-b-zinc-800 w-72 mb-8 text-white"
+    const inputStyle =
+        "bg-transparent border-b-2 border-b-zinc-800 mb-8 text-white xl:w-80 w-64"
 
     return (
-        <div className="w-screen bg-zinc-700 flex justify-end">
+        <div className="w-screen bg-zinc-700 flex flex-col md:flex-row">
             <div
                 style={{ backgroundImage: `url(${data.subscribeImage})` }}
-                className="bg-no-repeat bg-cover bg-white w-60 h-80"
+                className="bg-no-repeat bg-cover bg-white w-screen h-80"
             >
             </div>
-            <form className="flex flex-col bg-black w-4/12 h-80 justify-center pl-12">
-                <div className='relative'>
+            <form className="w-screen flex flex-col bg-black h-80 justify-center pl-12">
+                {/*<div className='relative'>
                     <GiPlainCircle className='fill-zinc-900 w-80 h-80 absolute -z-10' />
-                    <GiPlainCircle className='fill-amber-300 left-10 top-6 z-50 w-6 h-6 absolute border-red-400' />
-                </div>
+                    <GiPlainCircle className='fill-amber-300 left-10 top-6 z-50 w-6 h-6 absolute' />
+    </div>*/}
                 <p className="text-white text-3xl font-serif mb-5">subscribe to news</p>
                 <input
                     type="text"
