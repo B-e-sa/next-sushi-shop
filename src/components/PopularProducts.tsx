@@ -1,6 +1,6 @@
-import getHigherNotes from '../../utils/getHigherNotes';
-import data from '../../utils/data.json';
-import ProductFrame from '../ProductFrame/ProductFrame';
+import getHigherNotes from '../utils/getHigherNotes';
+import data from '../utils/data.json';
+import ProductFrame from './ProductFrame';
 import clsx from 'clsx'
 
 const PopularProducts = () => {

@@ -32,7 +32,7 @@
             "id": 1,
             "name": "Caprese salad",
             "image": "/assets/products/caprese.webp",
-            "price": 0,
+            "price": 5,
             "stars": 5,
             "categories": [
                 "salad"
@@ -42,7 +42,7 @@
             "id": 2,
             "name": "Carbonara",
             "image": "/assets/products/carbonara.webp",
-            "price": 0,
+            "price": 9,
             "stars": 5,
             "categories": [
                 "pasta"
@@ -52,7 +52,7 @@
             "id": 3,
             "name": "Chicken salad",
             "image": "/assets/products/chicken-salad.webp",
-            "price": 0,
+            "price": 13,
             "stars": 3.5,
             "categories": [
                 "salad",
@@ -63,7 +63,7 @@
             "id": 4,
             "name": "Bolognese pasta",
             "image": "/assets/products/bolognese-pasta.webp",
-            "price": 0,
+            "price": 13,
             "stars": 4.5,
             "categories": [
                 "pasta"
@@ -73,7 +73,7 @@
             "id": 5,
             "name": "Steak tartare",
             "image": "/assets/products/steak-tartare.webp",
-            "price": 0,
+            "price": 20,
             "stars": 4,
             "categories": [
                 "steak"
@@ -83,7 +83,7 @@
             "id": 6,
             "name": "Niguiri",
             "image": "/assets/products/niguiri.webp",
-            "price": 0,
+            "price": 1,
             "stars": 5,
             "categories": [
                 "sushi"
@@ -93,7 +93,7 @@
             "id": 7,
             "name": "Shrimp Skewer",
             "image": "/assets/products/shrimp-skewer.webp",
-            "price": 0,
+            "price": 2,
             "stars": 3,
             "categories": [
                 "seafood"
@@ -103,7 +103,7 @@
             "id": 8,
             "name": "Rib eye steak",
             "image": "/assets/products/rib-eye-steak.webp",
-            "price": 0,
+            "price": 10,
             "stars": 2.5,
             "categories": [
                 "steak"
@@ -112,6 +112,7 @@
     ],
     "reviews": [
         {
+            "reviewId": 1,
             "reviewerName": "Matthew Adams",
             "avatar": "/assets/avatars/m3.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
@@ -119,6 +120,7 @@
             "note": 3.5
         },
         {
+            "reviewId": 2,
             "reviewerName": "Lola Petrick",
             "avatar": "/assets/avatars/w1.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
@@ -126,6 +128,7 @@
             "note": 4
         },
         {
+            "reviewId": 3,
             "reviewerName": "Roxanne Marks",
             "avatar": "/assets/avatars/w2.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
@@ -133,6 +136,7 @@
             "note": 4
         },
         {
+            "reviewId": 4,
             "reviewerName": "Eliana Friedman",
             "avatar": "/assets/avatars/w3.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
@@ -140,6 +144,7 @@
             "note": 4.5
         },
         {
+            "reviewId": 5,
             "reviewerName": "Mohammed Dillon",
             "avatar": "/assets/avatars/m2.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
@@ -147,6 +152,7 @@
             "note": 5
         },
         {
+            "reviewId": 6,
             "reviewerName": "David Richard",
             "avatar": "/assets/avatars/m1.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",
@@ -154,6 +160,7 @@
             "note": 3
         },
         {
+            "reviewId": 7,
             "reviewerName": "Hermione Mann",
             "avatar": "/assets/avatars/w5.webp",
             "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates tenetur praesentium maxime? In ab inventore velit. Voluptas iusto, expedita earum vitae laborum enim adipisci eveniet laboriosam esse eius doloribus.",

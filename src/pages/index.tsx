@@ -1,25 +1,36 @@
 import { type NextPage } from 'next';
-import Banners from '../components/Banners/Banners';
-import Categories from '../components/Categories/Categories';
-import Footer from '../components/Footer/Footer';
-import Header from '../components/Header/Header';
-import PopularProducts from '../components/PopularProducts/PopularProducts';
-import Products from '../components/Products/Products';
-import Reviews from '../components/Reviews/Reviews';
-import Subscribe from '../components/Subscribe/Subscribe';
+import Banners from '../components/Banners';
+import Categories from '../components/Categories';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Layout from '../components/Layout';
+import PopularProducts from '../components/PopularProducts';
+import Products from '../components/Products';
+import Reviews from '../components/Reviews';
+import Subscribe from '../components/Subscribe';
+import { useCart } from '../context/CartContext';
+import Cart from './cart';
 
 const Home: NextPage = () => {
+
+  const { cartDisplaying } = useCart();
+
   return (
-    <div>
-      <Header />
-      <Banners />
-      <PopularProducts />
-      <Categories />
-      <Products />
-      <Subscribe />
-      <Reviews />
-      <Footer />
-    </div>
+    <Layout>
+      {
+        !cartDisplaying ?
+          <>
+            <Banners />
+            <PopularProducts />
+            <Categories />
+            <Products />
+            <Subscribe />
+            <Reviews />
+          </>
+          :
+          <Cart />
+      }
+    </Layout>
   );
 };
 

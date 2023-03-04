@@ -1,10 +1,10 @@
 import clsx from 'clsx';
 import { useState } from 'react';
 import { AiOutlineLine } from 'react-icons/ai';
-import data from '../../utils/data.json';
-import BannerText from '../BannerText/BannerText';
-import Catalog from '../Catalog/Catalog';
-import Circles from '../Circles/Circles';
+import data from '../utils/data.json';
+import BannerText from './BannerText';
+import Catalog from './Catalog';
+import Circles from './Circles';
 
 const Banners = () => {
 

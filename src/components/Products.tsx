@@ -1,5 +1,5 @@
-import data from '../../utils/data.json';
-import ProductFrame from '../ProductFrame/ProductFrame';
+import data from '../utils/data.json';
+import ProductFrame from './ProductFrame';
 
 const Products = () => {
     return (

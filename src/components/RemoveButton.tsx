@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
-import { useCart } from '../../context/CartContext';
+import { useCart } from '../context/CartContext';
 
 
 const RemoveButton = ({ id }: { id: number; }) => {

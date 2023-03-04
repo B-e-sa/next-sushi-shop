@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { useRef, useState } from 'react';
 import { HiArrowLongRight } from 'react-icons/hi2';
-import data from '../../utils/data.json';
-import Stars from '../Stars/Stars';
+import data from '../utils/data.json';
+import Stars from './Stars';
 
 const Reviews = () => {
 
@@ -20,6 +20,7 @@ const Reviews = () => {
     const [rightArrowSettings, setRightArrowSettings] = useState(white);
 
     const handleClick = (action: string): void => {
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         const containerScroll = reviewContainer.current!
 
         const scrollMaxWidth =
@@ -43,7 +44,7 @@ const Reviews = () => {
             if (containerScroll.scrollLeft == scrollMaxWidth)
                 setRightArrowSettings(zinc);
 
-        };
+        }
     };
 
     return (
@@ -64,9 +65,9 @@ const Reviews = () => {
                 className='flex relative h-64 w-screen overflow-hidden items-center'
                 ref={reviewContainer}
             >
-                {sortedReviews.map(({ reviewerName, avatar, review, note, reviewDate }) => {
+                {sortedReviews.map(({ reviewerName, avatar, review, note, reviewDate, reviewId }) => {
                     return (
-                        <div className='bg-zinc-800 w-fit px-10 py-5 mx-6 relative h-fit'>
+                        <div key={reviewId} className='bg-zinc-800 w-fit px-10 py-5 mx-6 relative h-fit'>
                             <p className='text-white absolute right-0 bg-zinc-600 text-xs w-12 text-center select-none'>
                                 {reviewDate}
                             </p>

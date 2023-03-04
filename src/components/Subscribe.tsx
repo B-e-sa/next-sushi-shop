@@ -1,9 +1,10 @@
-import data from '../../utils/data.json';
+import data from '../utils/data.json';
+
+export const inputStyle =
+    "bg-transparent border-b-2 border-b-zinc-800 mb-8 text-white xl:w-80 w-64"
+
 
 const Subscribe = () => {
-
-    const inputStyle =
-        "bg-transparent border-b-2 border-b-zinc-800 mb-8 text-white xl:w-80 w-64"
 
     return (
         <div className="w-screen bg-zinc-700 flex flex-col md:flex-row">

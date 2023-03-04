@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsFillHandbagFill } from 'react-icons/bs';
-import { useCart } from '../../context/CartContext';
+import { useCart } from '../context/CartContext';
 import clsx from 'clsx';
 
 const AddButton = ({ id }: { id: number }) => {

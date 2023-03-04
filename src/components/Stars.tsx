@@ -23,7 +23,7 @@ const Stars = ({ starQuantity }: IStar) => {
 
       for (let i = 0; i < 5; i++) {
         stars.push(filledStar);
-      };
+      }
 
 
     } else {
@@ -31,7 +31,7 @@ const Stars = ({ starQuantity }: IStar) => {
       // push full stars
       for (let i = 0; i < Math.floor(starQuantity); i++) {
         stars.push(filledStar);
-      };
+      }
 
       // see if number is integer(hasn't half stars)
       if (Number.isInteger(starQuantity)) {
@@ -39,7 +39,7 @@ const Stars = ({ starQuantity }: IStar) => {
         // fill with empty stars
         for (let i = 0; i < 5 - Math.floor(starQuantity); i++) {
           stars.push(emptyStar);
-        };
+        }
 
       } else {
 
@@ -49,9 +49,9 @@ const Stars = ({ starQuantity }: IStar) => {
           if (4 - Math.floor(starQuantity) === 0)
             break;
           stars.push(emptyStar);
-        };
-      };
-    };
+        }
+      }
+    }
 
     return stars;
 

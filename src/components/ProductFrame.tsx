@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import { useCart } from '../../context/CartContext';
-import IProducts from '../../interfaces/IProducts';
-import convertToCurrency from '../../utils/convertToCurrency';
-import AddButton from '../AddButton/AddButton';
-import RemoveButton from '../RemoveButton/RemoveButton';
-import Stars from '../Stars/Stars';
+import { useCart } from '../context/CartContext';
+import type IProducts from '../interfaces/IProducts';
+import convertToCurrency from '../utils/convertToCurrency';
+import AddButton from './AddButton';
+import RemoveButton from './RemoveButton';
+import Stars from './Stars';
 
 const ProductFrame = ({ id, name, image, price, stars }: IProducts) => {
 

@@ -2,15 +2,18 @@ import { createContext, useContext, useState } from 'react'
 
 interface IChildren {
     children: JSX.Element
-};
+}
 
 interface IContext {
+    cartDisplaying: boolean
+    handleCartDisplay: () => void
     getItemQuantity: (id: number) => number
     increaseItemQuantity: (id: number) => void
     decreaseItemQuantity: (id: number) => void
     removeFromCart: (id: number) => void
     cartItems: IItem[]
-};
+    cartQuantity: number
+}
 
 interface IItem {
     id: number;
@@ -26,10 +29,17 @@ export const useCart = () => {
 export const CartProvider = ({ children }: IChildren): JSX.Element => {
 
     const [cartItems, setCartItems] = useState<IItem[]>([]);
+    const [cartDisplaying, setCartDisplaying] = useState(false);
+
+    const handleCartDisplay = () => {
+        setCartDisplaying(!cartDisplaying);
+    }
 
     const getItemQuantity = (id: number) => {
         return cartItems.find((item) => item.id === id)?.quantity || 0
     };
+
+    const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0);
 
     const increaseItemQuantity = (id: number) => {
         setCartItems(currentItems => {
@@ -41,10 +51,11 @@ export const CartProvider = ({ children }: IChildren): JSX.Element => {
                         return { ...item, quantity: item.quantity + 1 }
                     } else {
                         return item
-                    };
+                    }
                 });
-            };
+            }
         });
+        localStorage.setItem('cart-items', JSON.stringify(cartItems));
     };
 
     const decreaseItemQuantity = (id: number) => {
@@ -57,20 +68,26 @@ export const CartProvider = ({ children }: IChildren): JSX.Element => {
                         return { ...item, quantity: item.quantity - 1 }
                     } else {
                         return item
-                    };
+                    }
                 });
-            };
-        });
+            }
+        }
+        );
+        localStorage.setItem('cart-items', JSON.stringify(cartItems));
     };
 
     const removeFromCart = (id: number) => {
         setCartItems(currentItems => {
             return currentItems.filter(item => item.id !== id);
         });
+        localStorage.setItem('cart-items', JSON.stringify(cartItems));
     };
 
     return (
         <CartContext.Provider value={{
+            cartDisplaying,
+            handleCartDisplay,
+            cartQuantity,
             getItemQuantity,
             increaseItemQuantity,
             decreaseItemQuantity,

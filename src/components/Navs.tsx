@@ -1,4 +1,4 @@
-import CreditCards from "../CreditCards/CreditCards"
+import CreditCards from "./CreditCards"
 
 const Navs = () => {
 
